@@ -103,6 +103,7 @@
     flex-wrap: wrap;
     gap: 7px;
     justify-content: space-around;
+    margin-right: 11px;
 }
 
 .search-form__checkbox {
@@ -132,7 +133,7 @@
 .search-form__submit-button {
     width: 194px;
     height: 34px;
-    margin-left: 40px;
+    margin-left: 29px;
     margin-top: 20px;
     border: 1px solid white;
 }
