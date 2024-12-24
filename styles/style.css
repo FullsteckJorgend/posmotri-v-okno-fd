@@ -59,14 +59,28 @@
 }
 
 .search-form__fieldset-title {
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
 }
 
+/*.search-form__fieldset-title:first-of-type {
+    position: relative;
+}
+
+.search-form__fieldset-title:first-of-type::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 225px;
+    height: 1px; 
+    background-color: #fff;
+}
+*/
 .search-form__label {
     margin-top: 6px;
+    margin-left: -3px;
 }
 
 .search-form__label-text {
@@ -83,7 +97,7 @@
 }
 
 .search-form__textfield {
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
@@ -92,9 +106,10 @@
     background-color: inherit;
     width: 225px;
     height: 27px;
-    border-width: 0px;
-    border-style: none;
-    border-color: inherit;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    border-right: none;
 
 }
 
@@ -112,22 +127,40 @@
 .search-form__pseudo-checkbox {
     /*ПСЕВДО НЕ ЗАБЫТЬ 
     margin: 20px 0px 0px 40px;
-     !!!!!!!!!!!!!!!!!!*/
+    !!!!!!!!!!!!!!!!!!*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     display: inline-block; /*узнать почему при display: block; оно строится в колону а при inline-block все ок!!!*/
     width: 19px;
     height: 19px;
     border: 1px solid #fff;
+
+
+}
+
+.search-form__pseudo-checkbox:active {
+    width: 17px;
+    height: 17px;
+    padding: 0px;
+    border: 1px solid #fff;
+    background-color: #fff;
 }
 
 .button {
     color: #fff;
     background-color: inherit;
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     height: 34px;
     font-weight: 700;
     line-height: 21.6px;
     text-align: center;
+}
+
+.button:active {
+    background: rgba(84, 80, 80, 1);
+
 }
 
 .search-form__submit-button {
@@ -142,7 +175,7 @@
 }
 
 .title {
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-size: 75px;
     font-weight: 700;
     line-height: 70.5px;
@@ -154,7 +187,7 @@
 .content__accent {
     color: rgba(84, 80, 80, 1);
     background-color: inherit;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-size: 75px;
     font-weight: 700;
     line-height: 70.5px;
@@ -187,7 +220,7 @@
 }
 
 .content__video-card-title {
-    font-family: Oswald;
+    font-family: Oswald , sans-serif;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -201,7 +234,7 @@
 }
 
 .content__video-card-description {
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 17px;
