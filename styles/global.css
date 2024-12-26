@@ -8,6 +8,11 @@ html {
   block-size: 100%;
 }
 
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -58,3 +63,7 @@ a {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
   */
+
+  input {
+    all: unset;
+  }
