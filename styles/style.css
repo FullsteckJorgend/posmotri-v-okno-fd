@@ -32,7 +32,6 @@
 .result__video-container {
     width: 711px;
     height: 386px;
-
 }
 
 .result__video {
@@ -60,7 +59,9 @@
 }
 
 .search-form__fieldset-title {
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family:
+        Fira Sans Condensed,
+        sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
@@ -89,7 +90,6 @@
     outline-offset: 2px;
 } */
 
-
 .search-form__label:last-child {
     padding-right: 1px;
 }
@@ -103,7 +103,6 @@
 .search-form__label-text:hover {
     cursor: pointer;
     text-decoration: underline;
-
 }
 
 .visually-hidden {
@@ -125,7 +124,9 @@
     border-right: none;
     border-top: 1px solid #fff;
     color: #fff;
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family:
+        Fira Sans Condensed,
+        sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
@@ -134,7 +135,7 @@
 .search-form__textfield:focus {
     outline: none;
     outline-offset: none;
-} 
+}
 
 .search-form__textfield:focus-visible {
     outline: 1px solid #fff;
@@ -177,7 +178,8 @@
     display: none;
 }
 
-.search-form__checkbox[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
+.search-form__checkbox[type='checkbox']:checked
+    + .search-form__pseudo-checkbox::after {
     display: block;
 }
 
@@ -186,7 +188,9 @@
     min-height: 34px;
     background-color: inherit;
     color: #fff;
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family:
+        Fira Sans Condensed,
+        sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.6px;
@@ -216,7 +220,6 @@ button:focus-visible {
     margin-top: 19px;
     border: 1px solid white;
 }
-
 
 .title {
     font-family: Oswald, sans-serif;
@@ -293,7 +296,6 @@ button:focus-visible {
     outline-offset: -20px;
 }
 
-
 .content__video-card-title {
     width: 196px;
     font-family: Oswald, sans-serif;
@@ -310,17 +312,18 @@ button:focus-visible {
 
 .content__video-card-description {
     width: 196px;
-    font-family: Fira Sans Condensed, sans-serif;
+    font-family:
+        Fira Sans Condensed,
+        sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 17px;
     color: rgba(255, 255, 255, 1);
-    margin-left: 2px; 
+    margin-left: 2px;
     display: -webkit-box;
-    -webkit-line-clamp: 4; 
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
 }
 
 .more-button {

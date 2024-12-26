@@ -1,16 +1,15 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  block-size: 100%;
+    block-size: 100%;
 }
 
-
 :focus:not(:focus-visible) {
-  outline: none;
+    outline: none;
 }
 
 h1,
@@ -23,36 +22,35 @@ ol,
 li,
 blockquote,
 fieldset {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul,
 ol {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Кастомный скроллбар */
 .content__list-container::-webkit-scrollbar {
-  width: 4px;
+    width: 4px;
 }
 
 .content__list-container::-webkit-scrollbar-track {
-  background: rgb(217 217 217 / 10%);
+    background: rgb(217 217 217 / 10%);
 }
 
 .content__list-container::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+    background-color: #d9d9d9;
 }
 
-
-.content__list-container{
-  scrollbar-width: thin; 
-  scrollbar-color: #D9D9D9 rgba(217, 217, 217, 0.1); 
+.content__list-container {
+    scrollbar-width: thin;
+    scrollbar-color: #d9d9d9 rgba(217, 217, 217, 0.1);
 }
 
 /*.content__list::-moz-scrollbar-thumb {
@@ -64,6 +62,6 @@ a {
   background-color: #D9D9D9;
   */
 
-  input {
+input {
     all: unset;
-  }
+}
