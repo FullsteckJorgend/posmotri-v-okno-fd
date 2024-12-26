@@ -100,6 +100,12 @@
     display: inline-block;
 }
 
+.search-form__label-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
 .visually-hidden {
     width: 1px;
     height: 1px;
@@ -192,6 +198,7 @@
 }
 
 .button:hover {
+    cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -273,6 +280,7 @@ button:focus-visible {
 }
 
 .content__list-item:hover {
+    cursor: pointer;
     text-decoration: underline;
     /* text-underline-offset: 2px; почему-то не работает при 3px и более */
     /* line-height: 1.5;
