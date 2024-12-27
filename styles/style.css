@@ -32,6 +32,7 @@
 .result__video-container {
     width: 711px;
     height: 386px;
+    position: relative;
 }
 
 .result__video {
@@ -241,6 +242,7 @@ button:focus-visible {
 }
 
 .content__list-container {
+    position: relative;
     width: 399px;
     height: 298px;
     display: flex;
