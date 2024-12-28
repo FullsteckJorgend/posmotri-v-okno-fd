@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+fieldset {
+    border: none;
+}
+
 /* Кастомный скроллбар */
 .content__list-container::-webkit-scrollbar {
     width: 4px;
@@ -65,3 +69,4 @@ a {
 input {
     all: unset;
 }
+

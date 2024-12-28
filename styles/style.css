@@ -14,7 +14,6 @@
 
 .content {
     width: 1140px;
-    min-height: 534px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
@@ -23,7 +22,6 @@
 
 .result {
     width: 711px;
-    min-height: 456px;
     display: inline-block;
     padding: 78px 30px 0px 0px;
     gap: 16px;
@@ -43,16 +41,12 @@
 
 .search-form {
     width: 711px;
-    min-height: 54px;
     display: flex;
     margin-top: 13px;
-    object-fit: fill;
-    object-position: center;
 }
 
 .search-form__fieldset {
     width: 225px;
-    min-height: 54px;
 }
 
 .search-form__fieldset:not(:first-child) {
@@ -74,9 +68,8 @@
 
 .search-form__label {
     width: 59px;
-    height: 19px;
     display: flex;
-    margin-left: -3px;
+    margin-right: 3px;
     margin-top: 4px;
     justify-content: space-between;
 }
@@ -97,11 +90,14 @@
 
 .search-form__label-text {
     width: 35px;
-    height: 22px;
     display: inline-block;
 }
 
-.search-form__label-text:hover {
+/* здесь, я не совсем понял, что вы имели в виду.
+очень сильно буду благодарен если вы перефразируете */
+/* .search-form__label-text:hover */
+/* .search-form__label:hover .search-form__label-text */
+.search-form__label:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -157,7 +153,7 @@
 
 .search-form__checkbox-list {
     display: flex;
-    gap: 20px;
+    gap: 13px;
     margin-right: 11px;
 }
 
@@ -196,6 +192,7 @@
     font-weight: 700;
     line-height: 21.6px;
     text-align: center;
+    border: 1px solid white;
 }
 
 .button:active {
@@ -214,12 +211,12 @@ button:focus-visible {
     /* border: 2px solid #fff; */
 }
 
+/* вроде нечто негде не повторяется, и все общие свойства от родителя.*/
 .search-form__submit-button {
     width: 194px;
     height: 34px;
     margin-left: 29px;
     margin-top: 19px;
-    border: 1px solid white;
 }
 
 .title {
@@ -233,11 +230,6 @@ button:focus-visible {
 }
 
 .content__accent {
-    font-family: Oswald, sans-serif;
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 70.5px;
-    background-color: inherit;
     color: rgba(84, 80, 80, 1);
 }
 
@@ -248,7 +240,7 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
     overflow: scroll;
-    overflow-x: hidden;
+    overflow-x: clip;
     align-items: center;
 }
 
@@ -264,6 +256,8 @@ button:focus-visible {
 .content__video-card-thumbnail {
     width: 194px;
     height: 103px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .content__video-card {
@@ -284,9 +278,10 @@ button:focus-visible {
     grid-template-columns: 199px 194px;
 }
 
-.content__list-item:hover {
+.content__card-link:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: #fff;
     /* text-underline-offset: 2px; почему-то не работает при 3px и более */
     /* line-height: 1.5;
     color: red; */
@@ -329,9 +324,6 @@ button:focus-visible {
 }
 
 .more-button {
-    align-self: center;
-    border: 1px solid white;
-    display: block;
     min-height: 34px;
     margin-top: 30px;
     padding: 7px 0px 17px 0px;
@@ -340,12 +332,12 @@ button:focus-visible {
     margin-bottom: 3px;
 }
 
-fieldset {
-    border: none;
+.content__card-link:active {
+    background: rgba(84, 80, 80, 1);
 }
 
-.content__video-card:active {
-    background: rgba(84, 80, 80, 1);
+.content__card-link_current{
+    background-color: #545050;
 }
 
 /* Отчасти этот проект одновременно и легче, и сложнее. Спасибо большое! С наступающим Новым годом!
