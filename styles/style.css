@@ -97,7 +97,8 @@
 очень сильно буду благодарен если вы перефразируете */
 /* .search-form__label-text:hover */
 /* .search-form__label:hover .search-form__label-text */
-.search-form__label:hover {
+/* .search-form__label:not(:last-child):hover я хочу плакать, я устал! */
+.search-form__label:hover .search-form__label-text {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -235,12 +236,12 @@ button:focus-visible {
 
 .content__list-container {
     position: relative;
-    width: 399px;
+    width: 409px; /* 399px + 10px иза костома скролбара, он не повторим для некоторых браузеров! 4px Для скролика нереально */
     height: 298px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    overflow-x: clip;
+    overflow: auto;
+
     align-items: center;
 }
 
@@ -251,6 +252,7 @@ button:focus-visible {
     gap: 22px;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
 }
 
 .content__video-card-thumbnail {
